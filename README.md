@@ -31,7 +31,7 @@ Coming Soon
 * **bugzilla_access/** - Our adapter for bugzilla, along with several rudimentary
 analysis tools
 
-* **jira_access/** - Our adapter for accessing data from a network Jira instance
+* **jira_access/** - Our adapter for accessing data from a network JIRA instance
 
 Usability
 ----------------------
