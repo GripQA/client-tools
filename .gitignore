@@ -1,0 +1,10 @@
+# emacs backups
+*~
+\#*\#
+.\#*
+# Json output files
+*.json
+# csv files
+*.csv
+# Python files
+__pycache__/
