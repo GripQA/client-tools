@@ -20,6 +20,8 @@ Available Tools
 
 * **sonar_access/** - Our adapter for accessing data from a SonarQube server
 
+* **jira_access/** - Our adapter for accessing data from a network JIRA instance
+
 * **grip_util/** - Several utility scripts and programs that we've found useful.
   Also includes shared library definitions. *Note: For convenience, we've copied
 the shared library files into each sub-directory where they're used. These
@@ -30,8 +32,6 @@ Coming Soon
 
 * **bugzilla_access/** - Our adapter for bugzilla, along with several rudimentary
 analysis tools
-
-* **jira_access/** - Our adapter for accessing data from a network JIRA instance
 
 Usability
 ----------------------
