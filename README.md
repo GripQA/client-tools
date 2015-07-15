@@ -48,7 +48,7 @@ Support
 ----------------------
 
 If you have any questions, problems, or suggestions, please submit an
-[issue](issues) or contact us at support@grip.qa.
+[issue](../../issues) or contact us at support@grip.qa.
 
 License & Copyright
 ----------------------
