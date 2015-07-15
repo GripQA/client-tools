@@ -70,9 +70,14 @@ pathname exists and (optionally) checks r/w acess
 #### Module Classes:
 * **QZUtilsExc** - Exception handler
 
-License & Copyright
+Support
 ----------------------
 
+If you have any questions, problems, or suggestions, please submit an
+[issue](/GripQA/client-tools/issues) or contact us at support@grip.qa.
+
+License & Copyright
+----------------------
 
 Copyright 2015 Grip QA
 

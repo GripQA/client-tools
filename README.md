@@ -44,6 +44,12 @@ both directly and as samples/templates for your own work. Given our specialized
 application, the most common usage is likely to be as an example for how to
 accomplish a specific task
 
+Support
+----------------------
+
+If you have any questions, problems, or suggestions, please submit an
+[issue](/GripQA/client-tools/issues) or contact us at support@grip.qa.
+
 License & Copyright
 ----------------------
 
