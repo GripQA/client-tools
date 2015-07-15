@@ -1,4 +1,4 @@
-"""grp_import.py contains the common data / functions that support Grip QA's
+"""grip_import.py contains the common data / functions that support Grip QA's
 import scripts.
 
 Most of these functions are utilities that are shared by multiple import

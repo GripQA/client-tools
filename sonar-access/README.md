@@ -10,6 +10,12 @@ database.
 This code was developed with Python 3.4, and, as may be reaonably expected,
 might not be compatible with Python 2.x environments.
 
+Support
+----------------------
+
+If you have any questions, problems, or suggestions, please submit an
+[issue](/GripQA/client-tools/issues) or contact us at support@grip.qa.
+
 License & Copyright
 ----------------------
 
