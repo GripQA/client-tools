@@ -1,7 +1,7 @@
 bugzilla-access/
 =========================
 
-Introduction:
+Introduction
 ----------------------
 
 bugzilla-access contains a web based proof of concept application that attempts
@@ -14,7 +14,7 @@ to GripQA.  Although no longer actively moving forward, planned
 enhancements included generating recommendations for improvement and
 guidance regarding best practices.
 
-Platform:
+Platform
 ----------------------
 
 The bulk of the code is written in Python, with supporting bits of PHP and
@@ -28,7 +28,7 @@ stored in MongoDB for future analysis and reference processing.  Our PHP
 and CGI code assumes a relatively vanilla Apache web server, but it should
 be reasonably portable to other servers.
 
-Current State:
+Current State
 ----------------------
 
 It is somewhat self indulgent to refer to this codebase, in its current
@@ -44,7 +44,7 @@ Likewise, the architecture supports easily extensible analysis algorithms,
 either with our Python framework, or directly on the MongoDB that underlies
 this project.
 
-Future:
+Future
 ----------------------
 
 Unlike our other projects, bugzilla-access was envisioned as a stand-alone
@@ -54,7 +54,7 @@ planning to move the entire codebase forward, but the front-end data
 acquisition connector will almost certainly find its way into the GripQA
 platform in some form.
 
-Dependencies:
+Dependencies
 ----------------------
 
 Deployment and full execution requires the following external packages:
