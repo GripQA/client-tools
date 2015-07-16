@@ -1,0 +1,70 @@
+<html>
+<!-- 
+Copyright 2015 Grip QA
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<head>
+  <title>Quality Zen Database Configuration</title>
+</head>
+<body>
+  <p align="right">
+    <a href="./cfgdoc.html" title="Main Configuration Doc Page">
+      <em>Return to the main Configuration Doc page</em>
+    </a>
+  </p>
+
+  <p><strong>Database Section:</strong></p>
+
+  <table border="0">
+    <tr>
+      <td valign="top"> &nbsp;</td>
+      <td valign="top">'<tt>database</tt>'</td>
+      <td valign="top">&ndash;</td>
+      <td valign="top">value is the name of the database that stores qz data
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"> &nbsp;</td>
+      <td valign="top">'<tt>collection</tt>'</td>
+      <td valign="top">&ndash;</td>
+      <td valign="top">value is the name of the collection in the database that
+        is to be used for this session<br>
+        <br>
+        <em>Example:</em><br><tt>
+        database = bugzilla<br>
+        collection = issues<br>
+	<br></tt>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"> &nbsp;</td>
+      <td valign="top" align="right"><em>NOTE:</em></td>
+      <td valign="top"> </td>
+      <td valign="top">Both 'database' and 'collection' must be specified if
+        you want to work with the database for store/retrieve.  &nbsp;Exclude
+        both of these key/value pairs from your config file if you wish to
+        only download from the RESTful interace and do not want to store the
+        downloaded data.<br>
+      </td>
+    </tr>
+  </table>
+
+  <p align="right">
+    <a href="./cfgdoc.html" title="Main Configuration Doc Page">
+      <em>Return to the main Configuration Doc page</em>
+    </a>
+  </p>
+
+</body>
+</html>

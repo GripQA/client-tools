@@ -1,0 +1,83 @@
+#!/bin/bash
+
+# updQsrv - Copies files from the staging directories to the appropriate
+#           web server directories and sets the correct protections
+# No arguments
+#
+#
+# Copyright 2015 Grip QA
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+TRG=/var/www
+#TRG=~/sbx/targt
+
+# Move Python (.py) files to cgi-bin/, set permissions: rw-r--r--
+if test -n "$(find cgi-bin -maxdepth 1 -name '*.py' -print -quit)"
+then
+    sudo mv -iv cgi-bin/*.py $TRG/cgi-bin/
+    sudo chmod -v 644 $TRG/cgi-bin/*.py
+else 
+   echo "No Python '.py' files in 'cgi-bin' to move"
+fi
+
+# Move .cgi files to cgi-bin/, set permissions to rwxr-xr-x
+if test -n "$(find cgi-bin -maxdepth 1 -name '*.cgi' -print -quit)"
+then
+   sudo mv -iv cgi-bin/*.cgi $TRG/cgi-bin/
+   sudo chmod -v 755 $TRG/cgi-bin/*.cgi
+else 
+   echo "No '.cgi' files in 'cgi-bin' to move"
+fi
+
+ls -l $TRG/cgi-bin
+
+# Move .html files to html/, set permissions to rw-r--r--
+if test -n "$(find html -maxdepth 1 -name '*.html' -print -quit)"
+then
+   sudo mv -iv html/*.html $TRG/html/
+   sudo chmod -v 644 $TRG/html/*.html
+else 
+   echo "No '.html' files in 'html' to move"
+fi
+
+# Move .ico files to html/, set permissions to rw-r--r--
+if test -n "$(find html -maxdepth 1 -name '*.ico' -print -quit)"
+then
+   sudo mv -iv html/*.ico $TRG/html/
+   sudo chmod -v 644 $TRG/html/*.ico
+else 
+   echo "No '.ico' files in 'html' to move"
+fi
+
+# Move .php files to html/, set permissions to rw-rw-r--
+if test -n "$(find html -maxdepth 1 -name '*.php' -print -quit)"
+then
+   sudo mv -iv html/*.php $TRG/html/
+   sudo chmod -v 664 $TRG/html/*.php
+else 
+   echo "No '.php' files in 'html' to move"
+fi
+
+ls -l $TRG/html
+
+# sudo mv -iv html/*.html /var/www/html/
+# sudo chmod 644 /var/www/html/*.html
+
+# sudo mv -iv html/*.ico /var/www/html/
+# sudo chmod 644 /var/www/html/*.ico
+
+# sudo mv -iv html/*.php /var/www/html/
+# sudo chmod 664 /var/www/html/*.php
+
+
