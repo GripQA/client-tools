@@ -27,11 +27,13 @@ Available Tools
 the shared library files into each sub-directory where they're used. These
 copies are kept up to date by our release scripts.
 
+* **bugzilla-access/** - Our web app for interacting with bugzilla.  Includes
+our adapter for bugzilla, along with several rudimentary analysis tools
+
 Coming Soon
 ----------------------
 
-* **bugzilla-access/** - Our adapter for bugzilla, along with several rudimentary
-analysis tools
+* More utility scripts and tools
 
 Usability
 ----------------------

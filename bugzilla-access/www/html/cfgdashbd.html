@@ -1,0 +1,79 @@
+<html>
+<!-- 
+Copyright 2015 Grip QA
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<head>
+  <title>Quality Zen Database Configuration</title>
+</head>
+<body>
+  <p align="right">
+    <a href="./cfgdoc.html" title="Main Configuration Doc Page">
+      <em>Return to the main Configuration Doc page</em>
+    </a>
+  </p>
+
+  <p><strong>Dashboard Section:</strong></p>
+  <table border="0">
+    <tr>
+      <td valign="top"> &nbsp;</td>
+      <td valign="top">'<tt>dashpath</tt>'</td>
+      <td valign="top">&ndash;</td>
+      <td valign="top">value is the filesystem pathname of the directory
+        to receive the HTML dashboard page.  &nbsp;The pathname should be
+        relative to the current working directory.  &nbsp;Specify <tt>nodash
+        </tt>as the value (or comment out/remove the '<tt>dashpath</tt>'
+        option value pair completely) to skip dashboard generation.<br>
+        <br>
+        As a security precaution, the HTML dashboard's filesystem location is
+        fixed when the application is running as a service.  &nbsp;
+        However, the <tt>nodash</tt> value will be effective.<br>
+        <br>
+        <em>Example 1:</em><br>
+        <tt>
+        dashpath = ../dashres/<br>
+        </tt>
+        <table>
+          <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+              <em>HTML Dashboard will be placed in the specified directory</em>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <em>Example 2:</em><br>
+        <tt>
+        dashpath = nodash<br>
+        </tt>
+        <table>
+          <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+              <em>HTML Dashboard will not be generated / displayed</em>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <p align="right">
+    <a href="./cfgdoc.html" title="Main Configuration Doc Page">
+      <em>Return to the main Configuration Doc page</em>
+    </a>
+  </p>
+
+</body>
+</html>
