@@ -8,3 +8,4 @@
 *.csv
 # Python files
 __pycache__/
+bugzilla-access/
